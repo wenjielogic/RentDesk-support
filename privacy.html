@@ -22,6 +22,9 @@
 <p>iOS 版在应用专属目录保存资料，并使用系统文件保护；保存时保留上一份有效记录用于故障保护。本机资料目录排除在应用自动备份之外。各设备资料独立，没有 iCloud 同步，请通过“设置与备份”定期导出 JSON，迁移设备或删除应用前尤其需要备份。</p>
 <p>JSON 完整备份包含房源、租客联系方式、租约、收款、设置及你选择的照片。CSV 账本和 TXT 草稿也可能包含个人或租赁资料。这些导出文件是可读文件，存放位置由你通过系统“文件”界面选择。若选择云端文件提供商，文件按该提供商的设置与政策处理；开发者不会因此收到文件。</p>
 <p>你可以修改记录、删除未关联租约的房源、撤销收款或删除单独提醒。部分记录为保持账本关系不能直接单独删除。要移除全部 iOS 本机资料，请在确认需要的备份已妥善保存后删除应用；“卸载 App”保留资料的系统选项不等同于“删除 App”。已导出的备份及其他副本需要你在相应位置另行删除。应用没有云账户，也没有供开发者代为恢复或删除的租客数据库。</p>
+<h3>维修履历与主动交接</h3>
+<p>0.2.0 版在本机保存房屋维修问题、部位、材料型号、费用、施工方、日期、保修信息、前后照片及完工记录。记录关联房屋，不会因租客更换自动删除。完整 JSON 备份也包含这些维修记录和照片。</p>
+<p>只有在你主动导出和发送维修资料时，所选内容才交给你选择的接收方。维修资料包按固定字段导出选定维修及必要房屋位置，不自动包含租客身份、租约、欠租、收租记录、工资或其他房屋。自行填写的说明或照片仍可能含个人信息，请分享前检查。资料文件可读、未加密，接收方能够保存副本；应用不能撤回对方副本。接收或发送文件不等于开发者收集该文件，应用没有自动上传、云同步或自动向施工方发消息。</p>
 <h3>网页、支持邮件与 Apple 服务</h3>
 <p>主动打开在线支持或隐私页面时，浏览器会访问网站托管商。使用 GitHub Pages 托管的页面可能由 GitHub 按其<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">隐私声明</a>处理 IP 地址、请求时间等访问记录；网页不嵌入广告、统计脚本或第三方字体。应用本地功能不依赖此网站。</p>
 <p>如果你主动发送支持邮件，开发者会收到你的邮箱地址、邮件内容和附件，仅用于答复、排查问题和必要的支持记录。邮件由邮件服务商处理。请尽量使用虚构资料或打码截图，不发送真实租客资料、密码或完整备份。支持记录在解决问题及必要后续处理期间保留；你可通过上述邮箱申请删除开发者控制范围内、已不再需要且没有保留义务的支持记录。</p>
@@ -46,6 +49,8 @@
 <p>Apple distribution, TestFlight, system diagnostics and feedback you choose to submit operate under Apple's policies and your settings. TestFlight feedback, screenshots or diagnostics may be made available to the developer for fixing issues. Avoid including real tenant information in feedback.</p>
 <h3>Your choices and future updates</h3>
 <p>You can turn off notifications in system settings. The iOS app does not request camera or photo-library access. Built-in covers remain available without selecting a photo, and the ledger remains usable without notifications. The app is designed for landlords, not as a children's service. Household counts are editable template values; the developer does not collect children's records. New accounts, online services or data-processing practices would require updates to this policy and the applicable store disclosures.</p>
+<h3>Maintenance records and voluntary handover</h3>
+<p>Version 0.2.0 stores repair issues, locations, materials, model numbers, costs, contractors, dates, warranty information, photos and completion history locally, associated with the property. Full JSON backups include these records. A repair handover file contains only the selected repair and necessary property identification/location; tenant, lease, rent arrears, payment, payroll and unrelated property records are not automatically exported. Check user-written text and photos for personal information before sharing. Files are readable and unencrypted, and recipients can retain copies. You choose and send files using your own tools; the app does not upload them to the developer, synchronize them to a server or automatically contact contractors.</p>
 </article>
 </main>
 <footer>© 2026 Wenjie Lu · <a href="support.html">使用帮助与支持 / Support</a></footer>
