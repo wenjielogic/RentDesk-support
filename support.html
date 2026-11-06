@@ -20,13 +20,14 @@
 <ol><li>在“我的房源”选择单人、两人、一家三口、一家四口或合租模板。</li><li>填写房源名称、位置、房间、可住人数和参考每周租金，选择封面并保存。</li><li>在“租客与租约”登记实际租客、人数、租金周期、首次应收日和结束日期。</li><li>到“闹铃与提醒”允许系统通知，设置时间，然后主动发送一条测试提醒。</li><li>收到钱后，在“收租账本”点“记收款”。定期到“设置与备份”导出完整 JSON。</li></ol>
 <h3>照片与家庭模板</h3>
 <p>👨‍👩‍👧 一家三口、👨‍👩‍👧‍👦 一家四口等模板只是快速填写起点，人数、位置和租金都需要按实际修改。内置独栋、公寓和单间图片是 AI 生成的通用示意图，不代表实际出租房屋。</p>
-<p>点房源上的“换封面”，选择内置图，或点“从文件选择照片”导入已有 JPG、PNG、WebP。iOS 版不直接拍照或打开相册；相册照片可先使用系统“存储到文件”，再导入。图片在本机压缩，输入不超过 12 MiB／4000 万像素，保存后单张不超过 220 KiB、长边不超过 1280 像素。HEIC 等不支持的文件可先导出为 JPG。整个资料及完整备份上限为 32 MiB；超限时应用会拒绝本次保存并提示。</p>
+<p>点房源上的“换封面”，选择内置图，或点“从文件选择照片”导入已有 JPG、PNG、WebP。iOS 的房源封面通过系统“文件”导入，相册照片可先使用“存储到文件”。图片在本机压缩，输入不超过 12 MiB／4000 万像素，保存后单张不超过 220 KiB、长边不超过 1280 像素。HEIC 等不支持的文件可先导出为 JPG。整个资料及完整备份上限为 32 MiB；超限时应用会拒绝本次保存并提示。</p>
 <h3>提醒为什么没有声音</h3>
 <p>iPhone 使用普通系统本地通知，不是会持续响铃的系统闹钟。先在 iOS 设置中检查 RentDesk 通知、声音、静音开关、音量及专注模式。点“发送一条测试提醒”后锁屏，等待约 5 秒检查结果。单独提醒需要设在未来时间，过去时间不会补响。</p>
 <p>自动租金提醒滚动安排未来 30 天，请至少每月打开一次应用。最多安排最近 60 条单次通知，另加每日重复提醒；超过时页面会提示。修改设置或登记收款后会重新排程。虚构示例空间不安排真实定时提醒，但主动点击测试通知仍可用于检查设备。</p>
 <h3>收款、租约和催租</h3>
 <p>“记收款”只记录你已通过其他方式收到的钱，不会从租客账户扣款。支持部分收款；登记错误可撤销。月租按首次应收日计算，例如 1 月 31 日、2 月最后一天、3 月 31 日。结束日包含当天应收，不自动按天折算。同一房源的租约不能重叠，合租的独立房间可分别登记为房源。</p>
 <p>已经创建的租约，其租金、周期和首次应收日不能直接改。涨租或重新出租时先结束旧租约，再建立新租约。“催租”和“招租文案”仅生成草稿，由你核对后自行发送或发布。应用不托管押金、不连接银行，也不生成租赁法律通知或合同。</p>
+<p>从 0.2.1 起，在“租客与租约”打开对应租约，可以填写入住和搬离日期、电话、邮箱和其他联系方式。在“租房合同”选取 PDF 或已有照片，也可以在手机上点“拍照保存”。保存租约后，附件留在本机，可单独导出，也会包含在完整备份里。每份租约最多 8 个附件，单份 PDF 最多 5 MiB。</p>
 <h3>房屋维修履历与资料交接</h3>
 <p>在“我的房源”点“维修履历”，或打开“房屋维修”，选房子后登记哪里坏了、维修前后照片、材料型号、费用、施工方和保修日期。记录跟着房子保存，换租客不会清空。每阶段最多 4 张照片；保修日期仅作记录，请按实际约定核对。</p>
 <p>选择一条维修记录，预览后导出维修资料文件，使用你自己的聊天或邮件工具交给施工方。对方可在新版 RentDesk 的维修页面导入请求、填写完工资料并导出回执；房东导入回执，核对后保存到原房屋履历。请使用维修资料文件，不要把完整工作空间备份发给施工方。</p>
@@ -44,11 +45,12 @@
 <h3>Getting started</h3>
 <p>In My Properties (我的房源), select a household template, enter the property location, occupancy and reference weekly rent, then choose a cover. Add the actual tenant and lease in Tenants and Leases (租客与租约). Set notification permission and times in Alarms and Reminders (闹铃与提醒). Record money received elsewhere in Rent Ledger (收租账本). Regularly export a full JSON backup from Settings and Backup (设置与备份).</p>
 <h3>Templates and photos</h3>
-<p>Single-person, two-person, family-of-three, family-of-four and shared-accommodation templates are editable starting points. Built-in house, apartment and bedroom images are generic AI-generated illustrations, not real listings. Choose an existing JPEG, PNG or WebP with the property editor’s Files button. The iOS app has no direct camera or photo-library entry; save an image from Photos to Files before importing it. Input limits are 12 MiB and 40 million pixels. Photos are compressed locally to at most 220 KiB and a 1280-pixel long edge. Convert unsupported formats such as HEIC to JPEG first. The complete dataset and backup are limited to 32 MiB; an over-limit save is refused without replacing previous records.</p>
+<p>Single-person, two-person, family-of-three, family-of-four and shared-accommodation templates are editable starting points. Built-in house, apartment and bedroom images are generic AI-generated illustrations, not real listings. Choose an existing JPEG, PNG or WebP with the property editor’s Files button. On iOS, save an image from Photos to Files before importing it as a property cover. Input limits are 12 MiB and 40 million pixels. Photos are compressed locally to at most 220 KiB and a 1280-pixel long edge. Convert unsupported formats such as HEIC to JPEG first. The complete dataset and backup are limited to 32 MiB. If a save exceeds that limit, the app keeps the previous records.</p>
 <h3>Notification checks</h3>
 <p>iOS reminders are ordinary local notifications, not continuously ringing alarms. Check app notifications, sound, silent mode, volume and Focus in iOS settings. Request a test notification, lock the device and wait about five seconds. Dated reminders must be in the future. Automatic rent reminders cover the next 30 days; open the app at least monthly. Up to 60 single notifications are scheduled, plus a repeating daily notification. Sample mode suppresses automatic notifications but permits an explicitly requested test.</p>
 <h3>Payments and leases</h3>
 <p>Payment entries record money received outside the app. Partial payments and undo are supported. Monthly schedules follow the original due day, using the last day for shorter months. The lease end date includes that day's rent and no daily proration is calculated. Leases for one property cannot overlap; separately rented rooms can be separate properties. End an existing lease and create a new one to change recurring rent, frequency or first due date. Reminder and listing text are editable drafts that you send or publish yourself. The app does not process payments, hold deposits or create legal notices or contracts.</p>
+<p>From version 0.2.1, open a lease to enter move-in and move-out dates and optional contact details. In Lease Contract, select a PDF or existing photo, or use the phone camera to photograph a page. Save the lease to keep the attachments on your device. You can export them individually or include them in a full backup. Each lease can hold up to eight attachments, and each PDF can be up to 5 MiB.</p>
 <h3>Backups and moving devices</h3>
 <p>Each installation has separate records with no account or cloud sync. The iOS data directory is excluded from automatic application backup. Export JSON and verify it in Files. JSON includes photos and complete records; CSV is only a ledger and is not a full backup. Importing a backup replaces the workspace, so export current records first. Deleting the app removes its local records; the developer has no cloud copy to restore. If the app reports a read error, preserve the installation and original files instead of uninstalling. Exports are readable files that you should keep in a location you control.</p>
 <h3>Sample data</h3>
